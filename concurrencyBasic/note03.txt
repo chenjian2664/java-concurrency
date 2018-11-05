@@ -1,0 +1,22 @@
+
+线程封闭
+
+Ad-hoc线程封闭 ，最糟糕，忽略
+堆栈封闭：局部变量，无并发问题
+ThreadLocal 线程封闭：特别好的办法
+THreadLocal 源码走一波
+
+线程不安全类写法
+StringBuilder ---> StringBuffer
+
+SimpleDateFormat ----> JodaTime
+
+ArrayList, HashSet, HashMap等 Collections
+
+ArrayList ----> Vector, Stack
+HashMap -----> hashTable (key value 不能为null)
+Collections.synchronizedXXX(List\Set\Map)
+
+foreach\iterator 过程中不要remove操作 可以先做标记，循环过后remove
+
+

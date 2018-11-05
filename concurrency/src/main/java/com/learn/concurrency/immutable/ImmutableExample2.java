@@ -1,6 +1,7 @@
 package com.learn.concurrency.immutable;
 
 import com.google.common.collect.Maps;
+import com.google.errorprone.annotations.Immutable;
 import com.learn.concurrency.annoations.NotThreadSafe;
 import com.learn.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
@@ -16,7 +17,6 @@ import java.util.Map;
 @ThreadSafe
 public class ImmutableExample2 {
     private static Map<Integer, Integer> map = Maps.newHashMap();
-
     static {
         map.put(1, 2);
         map.put(3, 4);
